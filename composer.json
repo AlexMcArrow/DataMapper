@@ -1,0 +1,44 @@
+{
+    "name": "alexmcarrow/datamapper",
+    "description": "Data Mapper Class",
+    "keywords": [
+        "import",
+        "mapping",
+        "read",
+        "filter",
+        "convert",
+        "transform"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.1",
+        "phpunit/phpunit": "^9.5.26"
+    },
+    "scripts": {
+        "psalm": "./vendor/bin/psalm --no-cache --show-info=true -m",
+        "phpunit": "phpunit --coverage-text",
+        "test": [
+            "@phpunit",
+            "@psalm"
+        ]
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AlexMcArrow\\DataMapper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex McArrow",
+            "email": "alex@mcarrow.ru",
+            "homepage": "https://github.com/AlexMcArrow",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable"
+}
